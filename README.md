@@ -1,3 +1,3 @@
 # resume page
 
-#### JohnnyIF.github.io
+#### johnnyxue.github.io
