@@ -1,3 +1,3 @@
 # resume page
 
-#### johnnyxue.github.io
+#### johnnynaught.github.io
