@@ -3,8 +3,35 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personal Resume</title>
     <link rel="stylesheet" href="./static/css/resume.css">
+    <style>
+        /* Animations and Transitions */
+        .content, .project-content, .work-content, .peasonal-message {
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+        }
+
+        .content:hover, .project-content:hover, .work-content:hover, .peasonal-message:hover {
+            transform: scale(1.05);
+            box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .link-to .button:hover {
+            background-image: linear-gradient(-130deg, #F7AB1C 0%, #FFBA00 100%);
+            color: white;
+        }
+
+        .icon-container .icon img:hover {
+            transform: scale(1.2);
+            transition: transform 0.2s ease-in-out;
+        }
+
+        /* Smooth Scroll */
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
 </head>
 
 <body>
@@ -20,7 +47,7 @@
             <div class="information-all">
                 <div class="col-6-asb">
                     <div class="col-3 personal">
-                        <img class="personal-image" src="./static/image/personal.png" alt="">
+                        <img class="personal-image" src="./static/image/person.png" alt="Profile Picture">
                     </div>
                     <div class="col-9 item">
                         <p class="title name">Johnny Xue</p>
@@ -37,17 +64,17 @@
                 <div class="col-6-asb">
                     <div class="col-6 experience">
                         <div class="item">
-                            <p class="title">ABOUT ME</p>
+                            <p class="title">About Me</p>
                             <ul>
-                                <li>2 Years Full-Time Analyst</li>
-                                <li>Target: Software Development Engineer</li>
+                                <li>2 Years as a Full-Time Analyst</li>
+                                <li>Goal: Software Development Engineer</li>
                             </ul>
                         </div>
                     </div>
-                    <div class="col-6 skill">
+                    <div class="col-6 skills">
                         <div class="item">
                             <p class="title">Languages</p>
-                            <div class="language">
+                            <div class="lang">
                                 <label>JAVA</label>
                                 <label>PYTHON</label>
                                 <label>SQL</label>
@@ -64,21 +91,76 @@
                     <p>Personal Projects</p>
                 </div>
                 <div class="project-detail">
-                    <div class="col-3-abs">
+                    <!-- Project Cards -->
+                    <div class="col-3-abs" id="project-0">
                         <div class="project-content">
-                            <p class="project-title">Backend Development</p>
-                            <p class="create-time">2021.8 - 2021.9</p>
-                            <p class="description">Developed a dynamic shopping website using MVC, SQL, and AJAX.</p>
+                            <img src="./static/image/LOGO1.png" alt="Project Logo">
+                            <p class="project-title">E-Commerce Backend</p>
+                            <p class="create-time">Aug 2014 - Sep 2014</p>
+                            <p class="description">
+                                Built using MVC design pattern, SQL Server database, and jQuery AJAX for dynamic shopping
+                                functionality. Features include product display, cart system, and database operations.
+                            </p>
                         </div>
                         <div class="link-to">
-                            <a href="#" class="button">View Demo</a>
+                            <a href="https://www.example.com" class="button">View Demo</a>
+                            <div class="shadow"></div>
                         </div>
                     </div>
+                    <!-- Add more projects similarly -->
+                </div>
+            </section>
+            <section>
+                <div class="title work">
+                    <p>Professional Experience</p>
+                </div>
+                <div class="work-experience-detail">
+                    <div class="item work-experience-content">
+                        <div class="logo">
+                            <img class="company-logo" src="./static/image/LOGO4.png" alt="Company Logo">
+                        </div>
+                        <div class="work-content">
+                            <p class="create-time">Oct 2014 - Oct 2016</p>
+                            <p class="job">Product Manager | TechOrange Info Ltd.</p>
+                            <ul>
+                                <li>Managed teams, e-commerce product management, and project planning.</li>
+                                <li>Analyzed website requirements, designed and optimized products.</li>
+                                <li>Collaborated with R&D, marketing, and customer service teams.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- Add more experiences similarly -->
                 </div>
             </section>
         </main>
         <footer>
-            <p class="footer">© Johnny Xue 2025</p>
+            <section>
+                <div class="title about-me">
+                    <p>Contact Me</p>
+                </div>
+                <div class="personal-message">
+                    <img class="personal-image" src="./static/image/person.png" alt="Profile Picture">
+                    <div class="item">
+                        <p class="name">Johnny Xue</p>
+                        <p class="phone">434 466 6666</p>
+                        <p class="email">xued@seas.upenn.edu</p>
+                    </div>
+                    <div class="item contact">
+                        <div class="col-3 qrcode">
+                            <img class="qr-image" src="./static/image/QRCode.png" alt="QR Code">
+                        </div>
+                        <div class="col-9">
+                            <p>Learn more about me</p>
+                            <div class="icon-container">
+                                <a href="#" class="icon"><img src="./static/image/github.png" alt="GitHub"></a>
+                                <a href="#" class="icon"><img src="./static/image/linkedin.png" alt="LinkedIn"></a>
+                                <!-- Add other icons -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <p class="footer">© Johnny Xue</p>
         </footer>
     </div>
 </body>
