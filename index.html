@@ -1,190 +1,86 @@
-* {
-    padding: 0;
-    margin: 0;
-}
-html, body {
-    width: 100%;
-    font-family: Arial, sans-serif;
-}
-a {
-    text-decoration: none;
-}
-html p {
-    margin: 0;
-}
-.col-3, .col-6, .col-9 {
-    display: inline-block;
-    vertical-align: top;
-    margin: 0;
-    padding: 0;
-}
-.col-3 {
-    width: 32%;
-}
-.col-3-abs {
-    width: 290px;
-    display: inline-block;
-}
-.col-6-asb {
-    width: 460px;
-    display: inline-block;
-    vertical-align: top;
-}
-.col-6 {
-    width: 48.5%;
-}
-.col-9 {
-    width: 65%;
-}
-.container {
-    width: 1000px;
-    margin: 0 auto;
-}
-.hide {
-    display: none;
-}
-.hide a {
-    text-decoration: initial;
-    cursor: pointer;
-}
-.pmessage {
-    position: relative;
-}
-.pmessage:hover .hide {
-    position: absolute;
-    display: block;
-    top: 0px;
-    right: 10px;
-    font-size: 14px;
-}
-.project-detail .pmessage:hover .hide {
-    top: 10px;
-}
-.work-experience-detail .pmessage:hover .hide {
-    top: 30px;
-}
-.img-header {
-    width: 1000px;
-    height: 300px;
-    margin-top: 20px;
-    background-image: url(../image/Group.png);
-}
-.personal-image {
-    width: 100px;
-    height: 100px;
-}
-.img-header .content {
-    font-family: Courier, monospace;
-    display: inline-block;
-    margin: 128px auto 0 334px;
-    padding: 10px 0px;
-    background: rgba(11,52,79,0.60);
-    width: 313px;
-    color: #fff;
-}
-.content p {
-    font-size: 12px;
-    text-shadow: 0 2px 4px #000000;
-    text-align: center;
-}
-.content strong {
-    font-size: 20px;
-    line-height: 14px;
-}
-.information-all, section {
-    margin-top: 50px; 
-}
-.information-all, main > section, footer > section {
-    padding: 0 35px;
-}
-.personal, .item {
-    display: inline-block;
-}
-.experience .item, .skill .item {
-    padding-left: 20px;
-}
-.item ul {
-    padding-left: 15px;
-}
-.language {
-    margin-top: -5px;
-}
-.item .title {
-    margin: 15px 0; 
-    font-weight: bold;
-    font-size: 16px;
-    color: #022643;
-}
-.item p, .item li, .item label {
-    font-size: 14px;
-    color: #022643;
-    line-height: 24px;
-}
-.item label {
-    font-family: Courier, monospace;
-    background: #E4EEF6;
-    padding: 3px;
-    margin-right: 8px;
-    border-radius: 2px;
-    vertical-align: top;
-}
-.experience, .skill {
-    border-left: 1px solid #9DAFBE;
-}
-section .title {
-    font-weight: bold;
-    font-size: 26px;
-    color: #022643;
-    width: 150px;
-    margin: 0 auto;
-    text-align: center;
-}
-.project-detail .col-3-abs {
-    margin-top: 50px;
-}
-.project-detail .button {
-    display: block;
-    background-image: linear-gradient(-130deg, #FFBA00 0%, #F7AB1C 100%);
-    border-radius: 3px;
-    text-align: center;
-    font-size: 16px;
-    color: #022643;
-}
-.project-content {
-    background: #FFFFFF;
-    box-shadow: 0 0 10px rgba(0,0,0,0.10);
-    border-radius: 5px;
-    padding: 20px;
-    text-align: center; 
-}
-.project-content p.project-title {
-    font-size: 16px;
-    font-weight: bold;
-    color: #022643;
-}
-.project-content p.create-time {
-    margin-top: 5px; 
-    font-size: 14px;
-    color: #767E84;
-}
-.project-content p.description {
-    margin-top: 15px; 
-    text-align: initial;
-    font-size: 14px;
-    color: #022643;
-}
-.work-experience-content {
-    border-bottom: 1px solid #D6DCE1;
-    padding: 30px 0;  
-}
-.enducation-detail {
-    padding: 50px 0 30px 0; 
-}
-footer .contact p {
-    letter-spacing: 1.43px;
-} 
-p.footer {
-    text-align: center;
-    font-size: 12px;
-    color: #9A9A9A;
-}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Personal Resume</title>
+    <link rel="stylesheet" href="./static/css/resume.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div class="img-header">
+                <div class="content">
+                    <p><strong> ON THE WAY </strong></p>
+                </div>
+            </div>
+        </header>
+        <main>
+            <div class="information-all">
+                <div class="col-6-asb">
+                    <div class="col-3 personal">
+                        <img class="personal-image" src="./static/image/personal.png" alt="">
+                    </div>
+                    <div class="col-9 item">
+                        <p class="title name">Johnny Xue</p>
+                        <div class="col-6">
+                            <p class="phone">434 466 6666</p>
+                            <p class="education">University of Pennsylvania | MCIT</p>
+                        </div>
+                        <div class="col-6">
+                            <p class="email">johnnyif@foxmail.com</p>
+                            <p class="profession">Computer and Information Technology</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6-asb">
+                    <div class="col-6 experience">
+                        <div class="item">
+                            <p class="title">ABOUT ME</p>
+                            <ul>
+                                <li>2 Years Full-Time Analyst</li>
+                                <li>Target: Software Development Engineer</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-6 skill">
+                        <div class="item">
+                            <p class="title">Languages</p>
+                            <div class="language">
+                                <label>JAVA</label>
+                                <label>PYTHON</label>
+                                <label>SQL</label>
+                                <label>HTML</label>
+                                <label>PHP</label>
+                                <label>R</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <section>
+                <div class="title project">
+                    <p>Personal Projects</p>
+                </div>
+                <div class="project-detail">
+                    <div class="col-3-abs">
+                        <div class="project-content">
+                            <p class="project-title">Backend Development</p>
+                            <p class="create-time">2021.8 - 2021.9</p>
+                            <p class="description">Developed a dynamic shopping website using MVC, SQL, and AJAX.</p>
+                        </div>
+                        <div class="link-to">
+                            <a href="#" class="button">View Demo</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <p class="footer">© Johnny Xue 2025</p>
+        </footer>
+    </div>
+</body>
+
+</html>
